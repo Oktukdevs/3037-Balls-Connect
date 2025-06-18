@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3a13c3d68408984e8359cc36a05e736, type: 3}
+  m_Name: DailyRewardsConfig
+  m_EditorClassIdentifier: 
+  DailyRewards:
+  - Type: 0
+    Sprite: {fileID: 21300000, guid: 89aff11c40edb7a488dc31f195ffe4fc, type: 3}
+    Amount: 100
+  - Type: 0
+    Sprite: {fileID: 21300000, guid: 89aff11c40edb7a488dc31f195ffe4fc, type: 3}
+    Amount: 300
+  - Type: 0
+    Sprite: {fileID: 21300000, guid: b77fde63fd4e3c64e85d3258bae34305, type: 3}
+    Amount: 2
+  - Type: 0
+    Sprite: {fileID: 21300000, guid: 89aff11c40edb7a488dc31f195ffe4fc, type: 3}
+    Amount: 500
+  - Type: 0
+    Sprite: {fileID: 21300000, guid: 888de2f8c640b874fbbf041bf10195fd, type: 3}
+    Amount: 1
+  - Type: 0
+    Sprite: {fileID: 21300000, guid: 89aff11c40edb7a488dc31f195ffe4fc, type: 3}
+    Amount: 700
+  ClaimedSprite: {fileID: 21300000, guid: eaaad89ae55342d4a86293320688b9b4, type: 3}
+  UnclaimedSprite: {fileID: 21300000, guid: 9d5f4cc964c38b248a5b04d736a9138e, type: 3}
+  LockedSprite: {fileID: 21300000, guid: 904e254c192d9574687b67dbdfac1f60, type: 3}

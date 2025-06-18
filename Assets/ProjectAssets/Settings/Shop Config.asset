@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0de6a7f4524aa9e42990d63dbe761a11, type: 3}
+  m_Name: Shop Config
+  m_EditorClassIdentifier: 
+  BackgroundItems:
+  - Sprite: {fileID: 21300000, guid: e89bf983c4a69414ab85c618854a1fa5, type: 3}
+    Price: 0
+  - Sprite: {fileID: 21300000, guid: c7b2158c58d373e4dbf38c8619de2b6d, type: 3}
+    Price: 1000
+  - Sprite: {fileID: 21300000, guid: 2d08f7868a10d1e41bdc4c618ecbd7f1, type: 3}
+    Price: 2500
+  - Sprite: {fileID: 21300000, guid: 3e6387f368af8154cb3c46aa7a09a381, type: 3}
+    Price: 5000
+  - Sprite: {fileID: 21300000, guid: 45f30b2f8200c6f43b99b19482bb4ab9, type: 3}
+    Price: 10000
+  - Sprite: {fileID: 21300000, guid: fbb2dc13d3501ac4394b652f1ef4d7e4, type: 3}
+    Price: 15000
+  - Sprite: {fileID: 21300000, guid: 978c51f86133f9e43a4e8fb29d13a64b, type: 3}
+    Price: 20000
+  - Sprite: {fileID: 21300000, guid: 305870b35b093f742bf1e3a83dc7068b, type: 3}
+    Price: 25000
+  - Sprite: {fileID: 21300000, guid: df353883e0a79234999ff57da4425870, type: 3}
+    Price: 50000
+  FieldItems:
+  - Sprite: {fileID: 21300000, guid: 13c73f52391fd1649a07d6989497e361, type: 3}
+    Price: 0
+    HeaderSprite: {fileID: 21300000, guid: 541449264ab99f948948c70f1ae50f65, type: 3}
+  - Sprite: {fileID: 21300000, guid: 8c242ea4911180c4cb6a391c6166c151, type: 3}
+    Price: 1000
+    HeaderSprite: {fileID: 21300000, guid: 126ed246f0ac2f24ba49ae8b9218dd1a, type: 3}
+  - Sprite: {fileID: 21300000, guid: 59692246767db324ca3d225ba3c5282a, type: 3}
+    Price: 2500
+    HeaderSprite: {fileID: 21300000, guid: 4dcb027ab44ca9b448ed743af8b3f8fe, type: 3}
+  - Sprite: {fileID: 21300000, guid: b7a43969ebc21c044b0c103de473af8b, type: 3}
+    Price: 5000
+    HeaderSprite: {fileID: 21300000, guid: 256084920b9ce8e4faefbe8ab03760b1, type: 3}
+  - Sprite: {fileID: 21300000, guid: 837baeef04da5294a812b0401f86b1b4, type: 3}
+    Price: 10000
+    HeaderSprite: {fileID: 21300000, guid: 53c1c94df059721488c9dd84086bdda4, type: 3}
+  SelectedItemSprite: {fileID: 21300000, guid: 633c7e0b530162748a4f5f61c2a741c1, type: 3}
+  NotSelectedItemSprite: {fileID: 21300000, guid: 9c5a09727ecba864796311b640587a74, type: 3}

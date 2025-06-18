@@ -1,0 +1,23 @@
+using System;
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace Runtime.Game.UI.Screen
+{
+    public class #NAME# : UiScreen
+    {
+        [SerializeField] private Button _backButton;
+        
+        public event Action OnBackPressed;
+        
+        public void Initialize()
+        {
+            SubscribeEvents();
+        }
+        
+        private void SubscribeEvents()
+        {
+            _backButton.onClick.AddListener(() => OnBackPressed?.Invoke());
+        }
+    }
+}

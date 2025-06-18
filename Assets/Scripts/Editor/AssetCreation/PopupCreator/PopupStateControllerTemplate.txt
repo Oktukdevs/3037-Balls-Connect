@@ -1,0 +1,25 @@
+using System.Threading;
+using Cysharp.Threading.Tasks;
+using Runtime.Core.GameStateMachine;
+using Runtime.Core.Infrastructure.Logger;
+using Runtime.Core.UI.Popup;
+using Runtime.Game.Services.UI;
+
+namespace Runtime.Game.GameStates.Game.Popups
+{
+    public class #NAME#StateController : StateController
+    {
+        private readonly IUiService _uiService;
+        
+        public #NAME#StateController(ILogger logger, IUiService uiService) : base(logger)
+        {
+            _uiService = uiService;
+        }
+
+        public override async UniTask Enter(CancellationToken cancellationToken = default)
+        {
+            #NAME# popup = await _uiService.ShowPopup(ConstPopups.#NAME#) as #NAME#;
+            
+        }
+    }
+}
