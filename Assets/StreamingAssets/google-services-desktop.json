@@ -1,0 +1,31 @@
+{
+  "project_info": {
+    "project_number": "875701776011",
+    "project_id": "iosor-72",
+    "storage_bucket": "iosor-72.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875701776011:ios:450d611267af756f126e8e",
+        "android_client_info": {
+          "package_name": "com.okktyukproj.app"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyANo1vBvR0wmaVtPe57zTP1EXvvIM_YOwA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
