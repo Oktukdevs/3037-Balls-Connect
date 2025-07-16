@@ -33,8 +33,8 @@ namespace Runtime.Game.UI.Popup
             _musicVolumeSlider.value = settingsPopupData.MusicVolume;
 
             _closeButton.onClick.AddListener(DestroyPopup);
-            _privacyPolicyButton.onClick.AddListener(() => OnPrivacyPolicyClick?.Invoke());
-            _termsOfUseButton.onClick.AddListener(() => OnTermsOfUseClick?.Invoke());
+            //_privacyPolicyButton.onClick.AddListener(() => OnPrivacyPolicyClick?.Invoke());
+            //_termsOfUseButton.onClick.AddListener(() => OnTermsOfUseClick?.Invoke());
 
             _soundVolumeSlider.onValueChanged.AddListener(OnSoundVolumeToggleValueChanged);
             _musicVolumeSlider.onValueChanged.AddListener(OnMusicVolumeToggleValueChanged);

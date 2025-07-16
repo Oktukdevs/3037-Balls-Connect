@@ -697,7 +697,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60.3
+  m_fontSize: 71.7
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1466,6 +1466,7 @@ GameObject:
   - component: {fileID: 5171372663075860480}
   - component: {fileID: 4750205783346185740}
   - component: {fileID: 7114459182638207945}
+  - component: {fileID: 4661214976115641612}
   m_Layer: 5
   m_Name: ToUButton
   m_TagString: Untagged
@@ -1589,6 +1590,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AspectMode: 3
   m_AspectRatio: 3.1445782
+--- !u!114 &4661214976115641612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5383713246444294816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed0991287c69c42428f39a7467bb8cc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  url: https://doc-hosting.flycricket.io/balls-connect-terms-of-use/840d27cd-7b8a-4bfe-83eb-f1853c5f3079/terms
 --- !u!1 &5576485569007382855
 GameObject:
   m_ObjectHideFlags: 0
@@ -2254,7 +2268,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 57.05
+  m_fontSize: 67.85
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2414,6 +2428,7 @@ GameObject:
   - component: {fileID: 6260093715571700652}
   - component: {fileID: 8548470547037758293}
   - component: {fileID: 5240512967723747535}
+  - component: {fileID: 3772425304547879834}
   m_Layer: 5
   m_Name: PPButton
   m_TagString: Untagged
@@ -2537,6 +2552,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AspectMode: 3
   m_AspectRatio: 3.1445782
+--- !u!114 &3772425304547879834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8470703654212114604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed0991287c69c42428f39a7467bb8cc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  url: https://doc-hosting.flycricket.io/balls-connect-privacy-policy/e2dce1b7-3d24-4953-8fdc-6cd25bedd9de/privacy
 --- !u!1 &8511512427105442638
 GameObject:
   m_ObjectHideFlags: 0
