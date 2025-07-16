@@ -12,7 +12,8 @@ jobs:
         unity-version:
           - 2022.3.33f1
         os:
-          - ubuntu-latest
+          #- ubuntu-latest
+          - ubuntu-22.04
         targetPlatform:
           - iOS # Build an iOS player.
           #- Android # Build an Android .apk standalone app.
