@@ -7,11 +7,271 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Editor" t="Include">
+          <e p="PostBuildiOSPlistModifier.cs" t="Include" />
+        </e>
+        <e p="ExternalDependencyManager" t="Include">
+          <e p="Editor" t="Include">
+            <e p="external-dependency-manager_version-1.2.183_manifest.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Firebase" t="Include">
+          <e p="Editor" t="Include">
+            <e p="AnalyticsDependencies.xml" t="Include" />
+            <e p="AppDependencies.xml" t="Include" />
+            <e p="CrashlyticsDependencies.xml" t="Include" />
+            <e p="FirebaseAnalytics_version-12.3.0_manifest.txt" t="Include" />
+            <e p="FirebaseCrashlytics_version-12.3.0_manifest.txt" t="Include" />
+            <e p="FirebaseMessaging_version-12.3.0_manifest.txt" t="Include" />
+            <e p="Messaging" t="Include">
+              <e p="FirebaseMessagingActivityGenerator.asmdef" t="Include" />
+              <e p="FirebaseMessagingActivityGenerator.cs" t="Include" />
+            </e>
+            <e p="MessagingDependencies.xml" t="Include" />
+          </e>
+          <e p="m2repository" t="Include">
+            <e p="com" t="Include">
+              <e p="google" t="Include">
+                <e p="Firebase" t="Include">
+                  <e p="firebase-analytics-unity" t="Include">
+                    <e p="maven-metadata.xml" t="Include" />
+                  </e>
+                  <e p="firebase-app-unity" t="Include">
+                    <e p="maven-metadata.xml" t="Include" />
+                  </e>
+                  <e p="firebase-crashlytics-unity" t="Include">
+                    <e p="maven-metadata.xml" t="Include" />
+                  </e>
+                  <e p="firebase-messaging-unity" t="Include">
+                    <e p="maven-metadata.xml" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Game" t="Include">
+          <e p="UserProfile" t="Include">
+            <e p="Plugins" t="Include">
+              <e p="ImageCropper" t="Include">
+                <e p="Demo" t="Include">
+                  <e p="ImageCropperDemo.cs" t="Include" />
+                </e>
+                <e p="ImageCropper.Runtime.asmdef" t="Include" />
+                <e p="README.txt" t="Include" />
+                <e p="Scripts" t="Include">
+                  <e p="CircleGraphic.cs" t="Include" />
+                  <e p="EventSystemHandler.cs" t="Include" />
+                  <e p="FadeOverlayGraphic.cs" t="Include" />
+                  <e p="FontSizeSynchronizer.cs" t="Include" />
+                  <e p="ImageCropper.cs" t="Include" />
+                  <e p="ImageCropperUtils.cs" t="Include" />
+                  <e p="ISelectionHandler.cs" t="Include" />
+                  <e p="NotchCompensator.cs" t="Include" />
+                  <e p="SelectionCornersFitter.cs" t="Include" />
+                  <e p="SelectionGraphicsSynchronizer.cs" t="Include" />
+                  <e p="SelectionMovementHandler.cs" t="Include" />
+                  <e p="SelectionResizeHandler.cs" t="Include" />
+                  <e p="SizeChangeListener.cs" t="Include" />
+                </e>
+              </e>
+              <e p="NativeCamera" t="Include">
+                <e p="Android" t="Include">
+                  <e p="NCCallbackHelper.cs" t="Include" />
+                  <e p="NCCameraCallbackAndroid.cs" t="Include" />
+                  <e p="NCPermissionCallbackAndroid.cs" t="Include" />
+                </e>
+                <e p="Editor" t="Include">
+                  <e p="NativeCamera.Editor.asmdef" t="Include" />
+                  <e p="NCPostProcessBuild.cs" t="Include" />
+                </e>
+                <e p="iOS" t="Include">
+                  <e p="NCCameraCallbackiOS.cs" t="Include" />
+                  <e p="NCPermissionCallbackiOS.cs" t="Include" />
+                </e>
+                <e p="NativeCamera.cs" t="Include" />
+                <e p="NativeCamera.Runtime.asmdef" t="Include" />
+                <e p="README.txt" t="Include" />
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="Editor" t="Include">
+                <e p="PackageBuilder" t="Include">
+                  <e p="VersionType.cs" t="Include" />
+                </e>
+              </e>
+              <e p="UI" t="Include">
+                <e p="AspectSizeLayoutElement.cs" t="Include" />
+                <e p="SelectPicturePanel.cs" t="Include" />
+                <e p="UserIcon.cs" t="Include" />
+                <e p="UserNameField.cs" t="Include" />
+              </e>
+              <e p="UserProfileStorage.cs" t="Include" />
+              <e p="Utils" t="Include">
+                <e p="SpriteSaver.cs" t="Include" />
+              </e>
+            </e>
+            <e p="UserProfileVersion.txt" t="Include" />
+          </e>
+        </e>
+        <e p="IOSPushPermission" t="Include">
+          <e p="Editor" t="Include">
+            <e p="IOSPostProcess.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="IOSPermissionRequester.cs" t="Include" />
+          </e>
+        </e>
         <e p="Octopus" t="Include">
+          <e p="Client" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Client.cs" t="Include" />
+              <e p="Constants.cs" t="Include" />
+              <e p="GameSettings.cs" t="Include" />
+              <e p="Pair.cs" t="Include" />
+              <e p="Requests" t="Include">
+                <e p="InitRequest.cs" t="Include" />
+                <e p="ReqType.cs" t="Include" />
+                <e p="Request.cs" t="Include" />
+                <e p="RequestType.cs" t="Include" />
+                <e p="StartRequest.cs" t="Include" />
+                <e p="TrackRequest.cs" t="Include" />
+                <e p="UpdateRequest.cs" t="Include" />
+              </e>
+              <e p="SenderRequest.cs" t="Include" />
+              <e p="Settings" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="SettingsEditorMenu.cs" t="Include" />
+                </e>
+                <e p="Settings.cs" t="Include" />
+              </e>
+              <e p="XBase64.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Content" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Content.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Debugger" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Debugger.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Extension" t="Include">
+            <e p="SceneAttribute" t="Include">
+              <e p="Editor" t="Include">
+                <e p="SceneDrawer.cs" t="Include" />
+              </e>
+              <e p="SceneAttribute.cs" t="Include" />
+            </e>
+          </e>
+          <e p="ExternalAppIntegration" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="ExternalAppLauncher.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Firebase" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="FirebaseInit.cs" t="Include" />
+            </e>
+          </e>
+          <e p="GAIDHelper" t="Include">
+            <e p="GAIDHelper.cs" t="Include" />
+          </e>
+          <e p="NativeiOSWebview" t="Include">
+            <e p="Editor" t="Include">
+              <e p="PostprocessPlistModifier.cs" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="NativeWebView.cs" t="Include" />
+            </e>
+          </e>
+          <e p="NoInternet PopUp" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="NoInternet.cs" t="Include" />
+            </e>
+          </e>
+          <e p="PackageBuilder" t="Include">
+            <e p="Editor" t="Include">
+              <e p="BuildPackage.cs" t="Include" />
+              <e p="BuildVersion.cs" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="PackageVersionManager.cs" t="Include" />
+            </e>
+            <e p="Version.txt" t="Include" />
+          </e>
+          <e p="PermissionManager" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="NotificationPermission.cs" t="Include" />
+              <e p="PermissionManager.cs" t="Include" />
+            </e>
+          </e>
           <e p="PP&amp;Terms" t="Include">
             <e p="Scripts" t="Include">
               <e p="ButtonClickListener.cs" t="Include" />
               <e p="WebviewShowPage.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Preloader" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="CircleLoading.cs" t="Include" />
+              <e p="HorizontalLoading.cs" t="Include" />
+              <e p="Loading.cs" t="Include" />
+              <e p="Panel.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Quit" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Quit.cs" t="Include" />
+            </e>
+          </e>
+          <e p="RateUs" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Consts.cs" t="Include" />
+              <e p="RateUsGenerateLink.cs" t="Include" />
+              <e p="RateUsLink.cs" t="Include" />
+            </e>
+          </e>
+          <e p="SceneLoaderCore" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Fade" t="Include">
+                <e p="UIFader.cs" t="Include" />
+              </e>
+              <e p="GUI" t="Include">
+                <e p="ButtonClickHandler.cs" t="Include" />
+                <e p="FadeContentEnabler.cs" t="Include" />
+                <e p="GoToSceneButton.cs" t="Include" />
+                <e p="RectTransformUtils.cs" t="Include" />
+              </e>
+              <e p="Helpers" t="Include">
+                <e p="SceneLoader.cs" t="Include" />
+              </e>
+              <e p="Logo" t="Include">
+                <e p="LogoScript.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="SceneSwitcherWindow" t="Include">
+            <e p="Editor" t="Include">
+              <e p="SceneSwitcherWindow.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Uni WebView" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="AutoRotate.cs" t="Include" />
+              <e p="KeyboardVisibilityDetector.cs" t="Include" />
+              <e p="WebViewController.cs" t="Include" />
+            </e>
+          </e>
+          <e p="USBInstallationCheck" t="Include">
+            <e p="USBInstallationCheck.cs" t="Include" />
+          </e>
+          <e p="VerifyInternetConnection" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="ConnectivityManager.cs" t="Include" />
+              <e p="InternetConnectionMonitor.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -786,6 +1046,17 @@
               </e>
             </e>
           </e>
+          <e p="PlayerPrefsEditor" t="Include">
+            <e p="Editor" t="Include">
+              <e p="Mac" t="Include">
+                <e p="Plist.cs" t="Include" />
+              </e>
+              <e p="PlayerPrefsEditor.cs" t="Include" />
+            </e>
+            <e p="PlayerPrefsUtility.cs" t="Include" />
+            <e p="README.txt" t="Include" />
+            <e p="SimpleEncryption.cs" t="Include" />
+          </e>
           <e p="StompyRobot" t="Include">
             <e p="SRDebugger" t="Include">
               <e p="README.txt" t="Include" />
@@ -1142,6 +1413,10 @@
       <e p="DOTween.Modules.csproj" t="IncludeRecursive" />
       <e p="EazySound.csproj" t="IncludeRecursive" />
       <e p="Editor.csproj" t="IncludeRecursive" />
+      <e p="FirebaseMessagingActivityGenerator.csproj" t="IncludeRecursive" />
+      <e p="ImageCropper.Runtime.csproj" t="IncludeRecursive" />
+      <e p="NativeCamera.Editor.csproj" t="IncludeRecursive" />
+      <e p="NativeCamera.Runtime.csproj" t="IncludeRecursive" />
       <e p="NativeGallery.Editor.csproj" t="IncludeRecursive" />
       <e p="NativeGallery.Runtime.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
