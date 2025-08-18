@@ -9,7 +9,7 @@ public static class SenderRequest
 {
     public static IEnumerator Send(Request webRequest, Action callback)
     {
-        webRequest.GenerateBody();
+        //webRequest.GenerateBody();
         
         webRequest.GenerateURL();
            

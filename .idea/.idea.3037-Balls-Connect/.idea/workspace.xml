@@ -23,25 +23,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3037-Balls-Connect/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3037-Balls-Connect/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3037-Balls-Connect/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3037-Balls-Connect/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Orientation/Animation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Orientation/Animation/Container.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Orientation/Animation/Container.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Orientation/Animation/Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Orientation/Animation/Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Orientation/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Orientation/Prefabs/Orientation.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Orientation/Prefabs/Orientation.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Orientation/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Orientation/Scripts/Orientation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Orientation/Scripts/Orientation.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Orientation/Sprites.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Orientation/Sprites/arrow circle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Orientation/Sprites/arrow circle.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Orientation/Sprites/container.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Orientation/Sprites/container.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Orientation/Sprites/phone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Orientation/Sprites/phone.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Initial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Initial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/link.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/link.xml.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1752653553662</updated>
       <workItem from="1752653587187" duration="13000" />
-      <workItem from="1753255155190" duration="1274000" />
+      <workItem from="1753255155190" duration="2453000" />
     </task>
     <servers />
   </component>

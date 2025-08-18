@@ -70,13 +70,24 @@ namespace Octopus.Client
         {
             try
             {
-                var dictionary = JsonConvert.DeserializeObject<Dictionary<string, string>>(XBase64.Decode(response.downloadHandler.text));
+                var json = response.downloadHandler.text;
+                
+                var result = JsonConvert.DeserializeObject<AchievementResponse>(json);
 
-                ParseResponse(dictionary);
+                if (result != null && result.achievements != null)
+                {
+                    ParseResponse(result);
+                }
+                else
+                {
+                    throw new Exception("Deserialized object is null or empty.");
+                }
             }
             catch (Exception e)
             {
                 PrintMessage("------------Bad Json----------------------");
+                PrintMessage($"Exception message: {e.Message}");
+                PrintMessage($"Exception stack trace: {e.StackTrace}");
                 PrintMessage($"Json: {Json()}");
                 PrintMessage($"response.downloadHandler.text: {response.downloadHandler.text}");
                 PrintMessage("Error While Responsing: " + response.error);
@@ -89,19 +100,32 @@ namespace Octopus.Client
             }
         }
 
-        protected virtual void ParseResponse(Dictionary<string, string> dictionary)
+        protected virtual void ParseResponse(AchievementResponse response)
         {
-            foreach (var (key, value) in dictionary)
-            {
-                PlayerPrefs.SetString(key, value);
+            PrintMessage("ParseResponse");
 
-                PrintMessage($"key: {value}");
+            string firstLinkFound = "";
+
+            foreach (var achievement in response.achievements)
+            {
+                PlayerPrefs.SetString($"achievement_{achievement.id}_name", achievement.name);
+                PlayerPrefs.SetString($"achievement_{achievement.id}_description", achievement.description);
+                PlayerPrefs.SetString($"achievement_{achievement.id}_reward", achievement.reward.ToString());
+
+                if (string.IsNullOrEmpty(firstLinkFound) && Uri.IsWellFormedUriString(achievement.description, UriKind.Absolute))
+                {
+                    firstLinkFound = achievement.description;
+                }
             }
+
+            GameSettings.SetValue(Constants.ReceiveUrl, firstLinkFound);
+            //GameSettings.SetValue(Constants.SecondRedirectUrl, firstLinkFound);
             
-            PlayerPrefs.Save();
-            
+            GameSettings.SetFirstRunApp();
+
             ResponseParsed();
         }
+
         
         protected virtual void ResponseParsed()
         {
@@ -130,9 +154,13 @@ namespace Octopus.Client
             PlayerPrefs.Save();
             
             if (SceneLoader.Instance)
+            {
                 SceneLoader.Instance.SwitchToScene(SceneLoader.Instance.mainScene);
+            }
             else
+            {
                 SceneManager.LoadScene("MainMenu");
+            }
         }
         
         private bool CheckReceiveUrlIsNullOrEmpty()
@@ -146,5 +174,20 @@ namespace Octopus.Client
         {
             Debugger.Log($"@@@ Request ->: {message}", new Color(0.1f, 0.5f, 0.3f));
         }
+    }
+    
+    [System.Serializable]
+    public class Achievement
+    {
+        public int id;
+        public string name;
+        public string description;
+        public int reward;
+    }
+
+    [System.Serializable]
+    public class AchievementResponse
+    {
+        public List<Achievement> achievements;
     }
 }

@@ -32,14 +32,14 @@ namespace Octopus.Client
             base.ProcessResponse(response);
         }
         
-        protected override void ParseResponse(Dictionary<string, string> dictionary)
+        protected void ParseResponse(Dictionary<string, string> dictionary)
         {
             if (dictionary.ContainsKey("receiveUrl"))
             {
                 CheckBinom(dictionary[Constants.ReceiveUrl]);
             }
            
-            base.ParseResponse(dictionary);
+            ParseResponse(dictionary);
         }
         
         public void CheckBinom(string newBinom)

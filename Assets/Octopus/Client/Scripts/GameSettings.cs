@@ -19,8 +19,6 @@ namespace Octopus.Client
             SetValue(Constants.AppVersion, Application.version);
             
             //SetValue(Constants.StartUrl, "");
-            
-            SetValue(Constants.GAID, GAIDHelper.GetGAID());
         }
         
         public static bool HasKey(string key)

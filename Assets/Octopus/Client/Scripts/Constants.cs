@@ -59,8 +59,8 @@ public class Constants
     //public const string CustomUserAgent = "gnevybhouh";
     //public const string FcmTokenKey = "i0nrthnguf";
     
-    public const string GAID = "GAID";
-    public const string InstallReferrer = "InstallReferrer";
+    //public const string GAID = "GAID";
+    //public const string InstallReferrer = "InstallReferrer";
     public const string DefaultUserAgent = "DefaultUserAgent";
     public const string FcmTokenKey = "FcmTokenKey";
 }
