@@ -111,7 +111,7 @@ jobs:
 
           IOS_BUILD_PATH: ${{ format('{0}/build/iOS', github.workspace) }}
           IOS_BUNDLE_ID: com.okktyukproj.app
-          APP_VERSION: "1.0.1"
+          APP_VERSION: "1.0.6"
           PROJECT_NAME: Balls Connect
         run: |
           eval "$(ssh-agent -s)"
@@ -130,3 +130,4 @@ jobs:
       #  uses: geekyeggo/delete-artifact@v2
       #  with:
       #    name: build-iOS
+
